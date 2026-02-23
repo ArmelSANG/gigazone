@@ -1,0 +1,55 @@
+# =====================================================
+# GigaZone WiFi Pro - robots.txt
+# https://z.ifiaas.com
+# =====================================================
+
+# Autoriser tous les robots
+User-agent: *
+Allow: /
+Allow: /inscription
+Allow: /login
+Allow: /check
+Allow: /verifier
+Allow: /cgu-publique
+Allow: /politique
+Allow: /mentions
+
+# Bloquer les pages privées (dashboards)
+Disallow: /promoteur
+Disallow: /admin
+Disallow: /onboarding
+Disallow: /cgu
+Disallow: /reset/
+
+# Sitemap
+Sitemap: https://z.ifiaas.com/sitemap.xml
+
+# Règles spécifiques pour Googlebot
+User-agent: Googlebot
+Allow: /
+Disallow: /promoteur
+Disallow: /admin
+Disallow: /onboarding
+
+# Règles spécifiques pour Bingbot
+User-agent: Bingbot
+Allow: /
+Disallow: /promoteur
+Disallow: /admin
+Disallow: /onboarding
+
+# Autoriser les crawlers de réseaux sociaux (pour les previews)
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+User-agent: TelegramBot
+Allow: /
